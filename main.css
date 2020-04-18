@@ -1,0 +1,56 @@
+#welcome {
+  text-align: center;
+}
+#form_div {
+  text-align:center;
+}
+
+#display_final {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  margin-top:20px; 
+}
+#decoded {
+  margin-left:30px;
+}
+#decode_input {
+ margin-top:20px;
+ width:300px;
+ height:25px;
+ font-size:17px;
+}
+button {
+    color: white;
+    background-color: #4791d0;
+    border-radius: 5px;
+    border: 1px solid #4791d0;
+}
+h3 {
+  color:#333333;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
