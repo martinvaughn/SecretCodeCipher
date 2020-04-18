@@ -1,8 +1,7 @@
 function decode(str) {
-   /************************************************
-    * Preprocess String. Erase punctuation 
-    & convert to upper case.
-  **************************************************/
+   /************************************
+    * Preprocess String. Erase punctuation & convert to upper case.
+  *************************************/
   str = str.replace(".", "");
   str = str.replace("?", "");
   str = str.replace("!", "");
@@ -28,8 +27,18 @@ function decode(str) {
    //convert ASCII back to Str
    convertedStr += String.fromCharCode(convertedNum);
   }
-  return convertedStr;
+  
+var newp=document.createElement('p');
+var newtext=document.createTextNode(convertedStr);
+
+newp.appendChild(newtext);
+ document.getElementById('decoded').innerHTML = "";
+document.getElementById('decoded').appendChild(newp);
+//return convertedStr;
 }
 
-var string = "SERR CVMMN!"
-console.log(decode(string));
+
+function getFormData(){ 
+var code=document.getElementById('decode_input').value;
+decode(code);
+}
