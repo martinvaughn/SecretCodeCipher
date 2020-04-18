@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="decode.js"></script>
+</head>
+<body>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+  
+  <div id="welcome">
+  <h1 id="title">Code Decipher</h1>
+  <h3 id="opening">Please Enter the ROT13 code below that you would like to have deciphered.</h3>
+    <p>*please note: letters will be processed in all caps, and punctuation will not be processed*</p> 
+  </div>
+  
+  <div id="form_div"
+  <form action="submit">
+    <input id="decode_input" type="text" placeholder="Enter Code Here..." required>
+  <button type="submit" onclick="getFormData()">Submit</input>
+  </form>
+  </div>
+<div id="display_final">
+<h3>Deciphered code will appear here:</h3>
+  <p id="decoded"></p>
+</div>
+</body>
+</html>
