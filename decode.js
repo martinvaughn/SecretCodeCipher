@@ -6,7 +6,7 @@ function decode(str) {
   str = str.replace("?", "");
   str = str.replace("!", "");
   str = str.replace(",", "");
-  str.toUpperCase();
+  str = str.toUpperCase();
 
   let convertedNum = ""; // Place holder for ASCII Number.
   let convertedStr = ""; // End Str to return.
